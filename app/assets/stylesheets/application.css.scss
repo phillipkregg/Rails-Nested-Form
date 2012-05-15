@@ -1,0 +1,70 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+@import 'bootstrap';
+
+textarea {
+  height: 40px;
+  width: 350px;
+  margin-top: 3px;
+}
+
+.question_label {
+  font-size: 14px;
+  
+}
+
+
+.well {
+  float: left;
+ }
+ 
+ form > fieldset {
+  border: none;
+  border: solid 1px #CCC;
+  padding: 10px 15px;
+  margin: 15px 0;
+  fieldset {
+    border: none;
+    margin: 0;
+    margin: 10px 0;
+    padding: 0;
+  }
+}
+
+input#survey_name {
+  width: auto;
+}
+
+.questions {
+  list-style: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  > li {
+    margin: 20px 0;
+    padding: 0;
+  }
+}
+
+.answers {
+  list-style: upper-alpha;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  > li {
+    margin: 5px 0;
+    margin-left: 25px;
+  }
+}
